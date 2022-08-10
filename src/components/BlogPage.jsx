@@ -1,0 +1,38 @@
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+
+export const BlogPage = () => {
+  const { slug } = useParams();
+  const [data, setData] = useState();
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetch(
+        `https://backendtesting1234.herokuapp.com/hopeland-systems/${slug}`
+      )
+        .then((res) => res.json())
+        .then((json) => setData(json));
+      setLoading(false);
+    };
+    fetchData().catch(console.error);
+  }, []);
+
+  console.log(data);
+
+  if (isLoading) {
+    return <div> Loading ... </div>;
+  }
+
+  return (
+    <div>
+      <div class="flex justify-center h-screen w-full bg-gray-800">
+        <div
+          class="lg:shadow-lg lg:w-1/3 lg:rounded sm:w-full lg:px-10 lg:py-10 mx-10 space-y-4 white text-white"
+          dangerouslySetInnerHTML={{ __html: data.sanitizedHtml }}
+        ></div>
+        {/* <h1>Test</h1> */}
+      </div>
+    </div>
+  );
+};

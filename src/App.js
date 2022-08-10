@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
 import { Footer } from "./components/Footer";
 import { Blogs } from "./pages/Blogs";
+import { BlogPage } from "./components/BlogPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route eact path="/" exact element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:slug" element={<BlogPage />} />
           {/* <Route path="contact" element={<Contact />} />
           <Route path="testimonials" element={<TestimonialsPage />} />
           <Route path="add-blog" element={<AddBlog />} />

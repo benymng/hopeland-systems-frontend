@@ -5,7 +5,8 @@ import { useEffect } from "react";
 
 export const Blogs = () => {
   const [isLoading, setLoading] = useState(true);
-  const serverLink = "http://localhost:3000/hopeland-systems/articles";
+  const serverLink =
+    "https://backendtesting1234.herokuapp.com/hopeland-systems/articles";
   const [articles, setArticles] = useState([]);
   const [imageCount, setImageCount] = useState(0);
   // when the second component is an empty that means that the fetch happens when you click the blog button
