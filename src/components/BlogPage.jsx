@@ -26,9 +26,9 @@ export const BlogPage = () => {
 
   return (
     <div>
-      <div class="flex justify-center h-screen w-full bg-gray-800">
+      <div class="flex justify-center h-screen w-full">
         <div
-          class="lg:shadow-lg lg:w-1/3 lg:rounded sm:w-full lg:px-10 lg:py-10 mx-10 space-y-4 white text-white"
+          class="lg:shadow-lg lg:w-1/3 lg:rounded sm:w-full lg:px-10 lg:py-10 mx-10 space-y-4 white "
           dangerouslySetInnerHTML={{ __html: data.sanitizedHtml }}
         ></div>
         {/* <h1>Test</h1> */}

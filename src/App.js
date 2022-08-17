@@ -4,6 +4,11 @@ import { Navigation } from "./components/Navigation";
 import { Footer } from "./components/Footer";
 import { Blogs } from "./pages/Blogs";
 import { BlogPage } from "./components/BlogPage";
+import { PageNotFound } from "./components/PageNotFound";
+import { About } from "./pages/About";
+import { Admin } from "./pages/Admin";
+import { AdminSignup } from "./components/AdminSignup";
+import { NewBlog } from "./pages/NewBlog";
 
 function App() {
   return (
@@ -14,6 +19,11 @@ function App() {
           <Route eact path="/" exact element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:slug" element={<BlogPage />} />
+          <Route path="*" element={<PageNotFound />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/newAdmin" element={<AdminSignup />} />
+          <Route path="/newBlog" element={<NewBlog />} />
           {/* <Route path="contact" element={<Contact />} />
           <Route path="testimonials" element={<TestimonialsPage />} />
           <Route path="add-blog" element={<AddBlog />} />

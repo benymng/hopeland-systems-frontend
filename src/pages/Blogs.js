@@ -38,8 +38,8 @@ export const Blogs = () => {
   // }
 
   return (
-    <div className="bg-gray-800 flex h-fit">
-      <div className="bg-gray-800 max-w-screen-xl px-4 py-16 mx-auto lg:items-center">
+    <div className="flex h-fit">
+      <div className=" max-w-screen-xl px-4 py-16 mx-auto lg:items-center">
         <div class="mx-auto text-center">
           <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-10">
             {articles.map((article) => (
