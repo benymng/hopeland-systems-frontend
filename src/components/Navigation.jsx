@@ -54,6 +54,12 @@ export const Navigation = () => {
               >
                 Contact
               </a>
+              <a
+                href="/admin"
+                class="block h-16 leading-[4rem] border-b-4 border-transparent hover:text-accent-color hover:border-current"
+              >
+                Admin
+              </a>
             </nav>
 
             {/* <div class="items-center ml-8 hidden md:block">

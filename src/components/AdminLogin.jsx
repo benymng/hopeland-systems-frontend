@@ -98,7 +98,7 @@ const AdminLogin = (props) => {
 
             <button
               type="submit"
-              class="block w-full px-5 py-3 text-sm font-medium text-white bg-accent-color hover:bg-hover-color rounded-lg"
+              class="block w-full px-5 py-3 text-sm font-medium bg-accent-color hover:bg-hover-color rounded-lg"
             >
               Submit
             </button>

@@ -10,7 +10,16 @@ export const Admin = () => {
 
   return (
     <div>
-      <h1>Logged In</h1>
+      <a href="/newAdmin">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-10">
+          Admin Signup
+        </button>
+      </a>
+      <a href="/newBlog">
+        <button class="bg-blue-300 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded my-10">
+          New Blog
+        </button>
+      </a>
     </div>
   );
 };

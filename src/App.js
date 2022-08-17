@@ -9,6 +9,8 @@ import { About } from "./pages/About";
 import { Admin } from "./pages/Admin";
 import { AdminSignup } from "./components/AdminSignup";
 import { NewBlog } from "./pages/NewBlog";
+import { Testimonials } from "./pages/Testimonials";
+import { Contact } from "./pages/Contact";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="/newAdmin" element={<AdminSignup />} />
           <Route path="/newBlog" element={<NewBlog />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/contact" element={<Contact />} />
           {/* <Route path="contact" element={<Contact />} />
           <Route path="testimonials" element={<TestimonialsPage />} />
           <Route path="add-blog" element={<AddBlog />} />
